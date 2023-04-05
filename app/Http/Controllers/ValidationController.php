@@ -15,8 +15,8 @@ class ValidationController extends Controller
         $user = $request->user();
 
         $validated = $request->validate([
-            'first_name' => ['required', 'string', 'max:50'], // Max
-            'last_name' => ['nullable', 'string', 'max:50'], // Orlov
+            'first_name' => ['required', 'string', 'max:50'], // Sergey
+            'last_name' => ['nullable', 'string', 'max:50'], // Chernov
             'age' => ['nullable', 'integer', 'min:18', 'max:150'], // 123
             'amount' => ['required', 'numeric', 'min:1', 'max:10000000'], // 123/123.45
             'gender' => ['nullable', 'string', 'in:male,female'],
